@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Orden
+    </title>
+</head>
+<body>
+    <header>
+        <h1>
+            Pedidos
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="about.html">Nosotros</a></li>
+
+                <li><a href="menu.html">Menú</a></li>
+
+                <li><a href="pizza-detail.html">Pizza especial</a></li>
+
+                <li><a href="order.html">Pedidos</a></li>
+
+                <li><a href="promotions.html">Promociones</a></li>
+
+                <li><a href="contact.html">Contacto</a></li>
+
+                <li><a href="location.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <hr>
+            <h2>
+                Haz tu pedido
+            </h2>
+
+            <form>
+                <p>
+                    <label for="nombre">
+                        Nombre:
+                    </label>
+                    <input type="text" name="nombre" minlength="3" maxlength="15" required>
+                </p>
+
+                <p>
+                    <label for="telefono">
+                            Teléfono:
+                    </label>
+                    <input type="text" name="telefono" pattern="[0-9]+" minlength="10" maxlength="10" required>   
+                </p>
+
+                <section>
+                    <p>
+                        <label for="pizza">
+                            Elige tu pizza:
+                        </label>
+
+                        <select id="pizza" name="pizza">
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="mexicana">Mexicana</option>
+                            <option value="vegetariana">Vegetariana</option>
+                            <option value="especial">Especial</option>
+                        </select>
+                    </p>
+                </section>
+
+                <p>
+                    Tamaño de la pizza:
+                        
+                    <input type="radio" name="tamanio" value="Grande">
+                    <label>
+                        Grande
+                    </label>
+                        
+                    <input type="radio" name="tamanio" value="Mediana">
+                    <label>
+                        Mediana
+                    </label>
+                        
+                    <input type="radio" name="tamanio" value="Pequeña">
+                    <label>
+                        Pequeña
+                    </label>
+                </p>
+                
+                <p>
+                    Ingredientes adicionales:
+                        
+                    <input type="checkbox" name="adicional" value="Queso">
+                    <label>
+                        Queso
+                    </label>
+                        
+                    <input type="checkbox" name="adicional" value="Peperoni">
+                    <label>
+                        Peperoni
+                    </label>
+                        
+                    <input type="checkbox" name="adicional" value="Champiñones">
+                    <label>
+                        Champiñones
+                    </label>
+                </p>
+
+                <p>
+                    <label for="cantidad">
+                        Cantidad:
+                    </label>
+                    <input type="number" name="cantidad" min="1" required>
+                </p>
+
+                <p>
+                    <label for="direccion">
+                        Dirección:
+                    </label>
+                    <input type="text" name="direccion" required>
+                </p>
+
+                <p>
+                    <label for="comentarios">
+                        Comentarios:
+                    </label>
+                </p>    
+
+                <p>
+                    <textarea name="comentarios" rows="5" cols="40"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar pedido">
+                    <input type="reset" value="Limpiar">
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pizzería robloxiana</p>
+    </footer>
+</body>
+</html>
