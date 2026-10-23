@@ -6,73 +6,68 @@
     <title>
         Orden
     </title>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
 </head>
-<body>
-    <header>
-        <h1>
+<body id="order-page">
+    <header id="main-header">
+        <h1 class="site-title">
             Pedidos
         </h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-
-                <li><a href="about.html">Nosotros</a></li>
-
-                <li><a href="menu.html">Menú</a></li>
-
-                <li><a href="pizza-detail.html">Pizza especial</a></li>
-
-                <li><a href="order.html">Pedidos</a></li>
-
-                <li><a href="promotions.html">Promociones</a></li>
-
-                <li><a href="contact.html">Contacto</a></li>
-
-                <li><a href="location.html">Ubicación</a></li>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="pizza-detail.html">Pizza especial</a></li>
+                <li class="nav-item"><a class="nav-link" href="order.html">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="promotions.html">Promociones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="location.html">Ubicación</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="main-content">
+        <section class="content-section">
             <hr>
-            <h2>
+            <h2 class="section-title">
                 Haz tu pedido
             </h2>
 
-            <form>
+            <form order-form>
                 <p>
-                    <label for="nombre">
+                    <label class="form-label" for="nombre">
                         Nombre:
                     </label>
-                    <input type="text" name="nombre" minlength="3" maxlength="15" required>
+                    <input class="form-input" type="text" name="nombre" minlength="3" maxlength="15" required>
                 </p>
 
                 <p>
-                    <label for="telefono">
-                            Teléfono:
+                    <label class="form-label" for="telefono">
+                        Teléfono:
                     </label>
-                    <input type="text" name="telefono" pattern="[0-9]+" minlength="10" maxlength="10" required>   
+                    <input class="form-input" type="text" name="telefono" pattern="[0-9]+" minlength="10" maxlength="10" required>   
                 </p>
 
-                <section>
+                <section class="sub-section">
                     <p>
-                        <label for="pizza">
+                        <label class="form-label" for="pizza">
                             Elige tu pizza:
                         </label>
-
-                        <select id="pizza" name="pizza">
-                            <option value="pepperoni">Pepperoni</option>
-                            <option value="mexicana">Mexicana</option>
-                            <option value="vegetariana">Vegetariana</option>
-                            <option value="especial">Especial</option>
+                        <select class="form-select" id="pizza" name="pizza">
+                            <option class="form-option" value="pepperoni">Pepperoni</option>
+                            <option class="form-option" value="mexicana">Mexicana</option>
+                            <option class="form-option" value="vegetariana">Vegetariana</option>
+                            <option class="form-option" value="especial">Especial</option>
                         </select>
                     </p>
                 </section>
 
                 <p>
-                    Tamaño de la pizza:
+                    <span class="radio-legend">
+                        Tamaño de la pizza:
+                    </span>
                         
                     <input type="radio" name="tamanio" value="Grande">
                     <label>
@@ -91,7 +86,9 @@
                 </p>
                 
                 <p>
-                    Ingredientes adicionales:
+                    <span class="checkbox-legend">
+                        Ingredientes adicionales:
+                    </span>
                         
                     <input type="checkbox" name="adicional" value="Queso">
                     <label>
@@ -110,39 +107,40 @@
                 </p>
 
                 <p>
-                    <label for="cantidad">
+                    <label class="form-label" for="cantidad">
                         Cantidad:
                     </label>
-                    <input type="number" name="cantidad" min="1" required>
+                    <input class="form-input" type="number" name="cantidad" min="1" required>
                 </p>
 
                 <p>
-                    <label for="direccion">
+                    <label class="form-label" for="direccion">
                         Dirección:
                     </label>
-                    <input type="text" name="direccion" required>
+                    <input class="form-input" type="text" name="direccion" required>
                 </p>
 
                 <p>
-                    <label for="comentarios">
+                    <label class="form-label" for="comentarios">
                         Comentarios:
                     </label>
                 </p>    
 
                 <p>
-                    <textarea name="comentarios" rows="5" cols="40"></textarea>
+                    <textarea class="form-textarea" name="comentarios" rows="5" cols="40"></textarea>
                 </p>
 
                 <p>
-                    <input type="submit" value="Enviar pedido">
-                    <input type="reset" value="Limpiar">
+                    <input class="btn-submit" type="submit" value="Enviar pedido">
+                    <input class="btn-reset" type="reset" value="Limpiar">
                 </p>
 
             </form>
         </section>
+        <hr>
     </main>
 
-    <footer>
+    <footer id="site-footer">
         <p>&copy; 2026 Pizzería robloxiana</p>
     </footer>
 </body>

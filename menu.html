@@ -6,80 +6,70 @@
     <title>
         Menú
     </title>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
 </head>
-<body>
-    <header>
-        <h1>
+<body id="menu-page">
+    <header id="main-header">
+        <h1 class="site-title">
             Menú
         </h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-
-                <li><a href="about.html">Nosotros</a></li>
-
-                <li><a href="menu.html">Menú</a></li>
-
-                <li><a href="pizza-detail.html">Pizza especial</a></li>
-
-                <li><a href="order.html">Pedidos</a></li>
-
-                <li><a href="promotions.html">Promociones</a></li>
-
-                <li><a href="contact.html">Contacto</a></li>
-
-                <li><a href="location.html">Ubicación</a></li>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="pizza-detail.html">Pizza especial</a></li>
+                <li class="nav-item"><a class="nav-link" href="order.html">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="promotions.html">Promociones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="location.html">Ubicación</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
-        <section>
+    <main id="main-content">
+        <section class="content-section">
             <hr>
-            <h2>
+            <h2 class="section-title">
                 Nuestro menú
             </h2>
 
-            <table border="1">
+            <table class="data-table" border="1">
                 <thead>
-                    <tr>
-                        <th>Pizza</th>
-                        <th>Ingredientes</th>
-                        <th>Precio</th>
+                    <tr class="table-header-row">
+                        <th class="table-header-cell">Pizza</th>
+                        <th class="table-header-cell">Ingredientes</th>
+                        <th class="table-header-cell">Precio</th>
                     </tr>
                 </thead>
-
                 <tbody>
-                    <tr>
-                        <td>Pizza Pepperoni</td>
-                        <td>Queso, salsa y pepperoni</td>
-                        <td>$130</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Pizza Pepperoni</td>
+                        <td class="table-cell">Queso, salsa y pepperoni</td>
+                        <td class="table-cell">$130</td>
                     </tr>
-
-                    <tr>
-                        <td>Pizza Mexicana</td>
-                        <td>Queso, jalapeño, chorizo y cebolla</td>
-                        <td>$180</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Pizza Mexicana</td>
+                        <td class="table-cell">Queso, jalapeño, chorizo y cebolla</td>
+                        <td class="table-cell">$180</td>
                     </tr>
-
-                    <tr>
-                        <td>Pizza Vegetariana</td>
-                        <td>Queso, champiñones, pimiento y tomate</td>
-                        <td>$190</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Pizza Vegetariana</td>
+                        <td class="table-cell">Queso, champiñones, pimiento y tomate</td>
+                        <td class="table-cell">$190</td>
                     </tr>
-
-                    <tr>
-                        <td>Pizza Especial</td>
-                        <td>Queso, pepperoni, champiñones y vegetales</td>
-                        <td>$220</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Pizza Especial</td>
+                        <td class="table-cell">Queso, pepperoni, champiñones y vegetales</td>
+                        <td class="table-cell">$220</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section>
-            <h2>
+        <section class="content-section">
+            <h2 class="section-title">
                 Extras
             </h2>
 
@@ -90,9 +80,10 @@
                 <li>Refresco - $30</li>
             </ul>
         </section>
+        <hr>
     </main>
 
-    <footer>
+    <footer id="site-footer">
         <p>&copy; 2026 Pizzería robloxiana</p>
     </footer>
 </body>

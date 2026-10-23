@@ -6,79 +6,71 @@
     <title>
         Contacto
     </title>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
 </head>
-<body>
-    <header>
-        <h1>
+<body id="contact-page">
+    <header id="main-header">
+        <h1 class="site-title">
             Contactanos
         </h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-
-                <li><a href="about.html">Nosotros</a></li>
-
-                <li><a href="menu.html">Menú</a></li>
-
-                <li><a href="pizza-detail.html">Pizza especial</a></li>
-
-                <li><a href="order.html">Pedidos</a></li>
-
-                <li><a href="promotions.html">Promociones</a></li>
-
-                <li><a href="contact.html">Contacto</a></li>
-
-                <li><a href="location.html">Ubicación</a></li>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="pizza-detail.html">Pizza especial</a></li>
+                <li class="nav-item"><a class="nav-link" href="order.html">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="promotions.html">Promociones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="location.html">Ubicación</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
-        <section>
+    <main id="main-content">
+        <section class="content-section">
             <hr>
             <p>
                 Teléfono: <strong>534-536-2789</strong>
             </p>
         </section>
 
-        <section>
-            <h2>
+        <section class="content-section">
+            <h2 class="section-title">
                 Envíanos un mensaje
             </h2>
 
-            <form>
+            <form class="contact-form">
                 <p>
-                    <label for="nombre">
-                     Ingrese su nombre:
+                    <label class="form-label" for="nombre">
+                        Ingrese su nombre:
                     </label>
-                    <input type="text" name="nombre" minlength="3" maxlength="15" required>
-                </p>  
-                
+                    <input class="form-input" type="text" name="nombre" minlength="3" maxlength="15" required>
+                </p>    
                 <p>
-                    <label for="correo">
+                    <label class="form-label" for="correo">
                         Correo electrónico:
                     </label>
-                    <input type="correo" name="correo" required>
+                    <input class="form-input" type="correo" name="correo" required>
                 </p>
-
                 <p>
-                    <label for="mensaje">
+                    <label class="form-label" for="mensaje">
                         Mensaje:
                     </label><br>
-                    <textarea name="mensaje" rows="4" cols="38"></textarea>
+                    <textarea class="form-textarea" name="mensaje" rows="4" cols="38"></textarea>
                 </p>
-                
                 <p>
-                    <button type="submit">
+                    <button class="btn-submit" type="submit">
                         Enviar
                     </button>
                 </p>
             </form>
         </section>
+        <hr>
     </main>
 
-    <footer>
+    <footer id="site-footer">
         <p>&copy; 2026 Pizzería robloxiana</p>
     </footer>
 </body>

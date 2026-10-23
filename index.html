@@ -6,76 +6,73 @@
     <title>
         Document
     </title>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
 </head>
-<body>
-    <header>
-        <h1>
-            Pizzería robloxiana
+<body id="home-page">
+    <header id="main-header">
+        <h1 class="site-title">
+            Pizzeria robloxiana
         </h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-
-                <li><a href="about.html">Nosotros</a></li>
-
-                <li><a href="menu.html">Menú</a></li>
-
-                <li><a href="pizza-detail.html">Pizza especial</a></li>
-
-                <li><a href="order.html">Pedidos</a></li>
-
-                <li><a href="promotions.html">Promociones</a></li>
-
-                <li><a href="contact.html">Contacto</a></li>
-
-                <li><a href="location.html">Ubicación</a></li>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="pizza-detail.html">Pizza especial</a></li>
+                <li class="nav-item"><a class="nav-link" href="order.html">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="promotions.html">Promociones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="location.html">Ubicación</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
-        <section>
+    <main id="main-content">
+        <section class="content-section">
             <hr>
-            <h2>
+            <h2 class="section-title">
                 Bienvenidos
             </h2>
 
-            <p>
+            <p class="text-note">
                 De las pizzas más buenas que vas a probar!
             </p>
 
-            <img width="300" src="images/pizza1.jpg" alt="Pizza recién preparada">
+            <img class="team-img" width="300" src="public/images/pizza1.jpg" alt="Pizza recién preparada">
         </section>
     
 
-        <section>
-            <h2>Horario</h2>
+        <section class="content-section">
+            <h2 class="section-title">
+                Horario
+            </h2>
 
-            <table border="1">
+            <table class="data-table" border="1">
                 <thead>
-                    <tr>
-                        <th>Día</th>
-                        <th>Horario</th>
+                    <tr class="table-header-row">
+                        <th class="table-header-cell">Día</th>
+                        <th class="table-header-cell">Horario</th>
+                    </tr>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>Lunes a viernes</td>
-                        <td>11 am - 11 pm</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Lunes a viernes</td>
+                        <td class="table-cell">11 am - 11 pm</td>
                     </tr>
-
-                    <tr>
-                        <td>Sábados y Domingos</td>
-                        <td>2 pm - 12 am</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Sábados y Domingos</td>
+                        <td class="table-cell">2 pm - 12 am</td>
                     </tr>
                 </tbody>
             </table>
         </section>
+        <hr>
     </main>
 
-    <footer>
+    <footer id="site-footer">
         <p>&copy; 2026 Pizzería robloxiana</p>
     </footer>
 

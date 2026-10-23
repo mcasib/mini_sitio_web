@@ -6,38 +6,32 @@
     <title>
         Detalles
     </title>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>
+    <header id="main-header">
+        <h1 class="site-title">
             Pizza Especial
         </h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-
-                <li><a href="about.html">Nosotros</a></li>
-
-                <li><a href="menu.html">Menú</a></li>
-
-                <li><a href="pizza-detail.html">Pizza especial</a></li>
-
-                <li><a href="order.html">Pedidos</a></li>
-
-                <li><a href="promotions.html">Promociones</a></li>
-
-                <li><a href="contact.html">Contacto</a></li>
-
-                <li><a href="location.html">Ubicación</a></li>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="pizza-detail.html">Pizza especial</a></li>
+                <li class="nav-item"><a class="nav-link" href="order.html">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" href="promotions.html">Promociones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="location.html">Ubicación</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="main-content">
+        <section class="content-section">
             <hr>
-            <img src="images/pizza2.png" alt="Pizza especial" width="350">
+            <img class="detail-img" src="/public/images/pizza2.png" alt="Pizza especial" width="350">
 
             <p>
                 Nuestra pizza especial combina diferentes ingredientes para
@@ -45,8 +39,8 @@
             </p>
         </section>
 
-        <section>
-            <h2>
+        <section class="content-section">
+            <h2 class="section-title">
                 Ingredientes
             </h2>
 
@@ -59,21 +53,21 @@
             </ul>
         </section>
 
-        <section>
-            <h2>
+        <section class="content-section">
+            <h2 class="section-title">
                 Precio
             </h2>
 
             <p>Pizza grande: <strong>$220</strong></p>
 
-            <a href="order.html">
+            <a class="action-link" href="order.html">
                 Haz tu pedido
             </a>
         </section>
-
+        <hr>
     </main>
 
-    <footer>
+    <footer id="site-footer">
         <p>&copy; 2026 Pizzería robloxiana</p>
     </footer>
 </body>
